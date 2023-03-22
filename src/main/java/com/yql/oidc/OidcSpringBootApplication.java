@@ -1,0 +1,11 @@
+package com.yql.oidc;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class OidcSpringBootApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(OidcSpringBootApplication.class, args);
+    }
+}
