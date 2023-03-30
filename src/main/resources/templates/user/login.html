@@ -1,0 +1,41 @@
+<th:block th:insert="~{/header}"></th:block>
+
+<div class="container  center-block">
+
+    <div class="jumbotron col-md-6" style="float: none;margin:0 auto;">
+        <div class="center-block">
+            <!-- Main component for a primary marketing message or call to action -->
+            <form th:action="@{/login}" method="post" th:method="post" class="form-signin">
+                <h2 class="form-signin-heading">您好，欢迎登录</h2>
+                <div class="form-group">
+                    <label for="inputUsername" class="sr-only">Username</label>
+                    <input type="text" id="inputUsername" class="form-control" placeholder="Username" name="username"
+                           required=""
+                           autofocus="">
+                </div>
+                <div class="form-group">
+                    <label for="inputPassword" class="sr-only">Password</label>
+                    <input type="password" id="inputPassword" class="form-control" placeholder="Password"
+                           name="password"
+                           required="">
+                </div>
+                <div class="form-group text-center">
+                    <a class="btn btn-link" href="/oauth2/authorization/oidc"
+                       th:href="@{/oauth2/authorization/zitadel}">使用Zitadel登录</a>
+                </div>
+                <div class="form-group text-center">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="remember-me"> 记住我
+                        </label>
+                    </div>
+                </div>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+            </form>
+        </div>
+    </div>
+
+</div> <!-- /container -->
+
+
+<th:block th:insert="~{//footer}"></th:block>

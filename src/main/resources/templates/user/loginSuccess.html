@@ -1,0 +1,16 @@
+<th:block th:insert="~{/header}"></th:block>
+
+<meta http-equiv="refresh" content="3;url=/webapp/index">
+
+<div class="container">
+
+    <div class="jumbotron">
+        <p class="center-block">
+            登录成功，欢迎用户《<span th:text="${session.loginUser}"></span>》
+        </p>
+    </div>
+
+
+</div> <!-- /container -->
+
+<th:block th:insert="~{//footer}"></th:block>

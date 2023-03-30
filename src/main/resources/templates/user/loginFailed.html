@@ -1,0 +1,16 @@
+<th:block th:insert="~{/header}"></th:block>
+
+<meta http-equiv="refresh" content="3;url=/user/login">
+
+<div class="container">
+
+    <div class="jumbotron">
+        <p class="center-block">
+            登录失败页面...失败原因：<span th:text="${session.SPRING_SECURITY_LAST_EXCEPTION}"></span>
+        </p>
+    </div>
+
+
+</div> <!-- /container -->
+
+<th:block th:insert="~{//footer}"></th:block>
